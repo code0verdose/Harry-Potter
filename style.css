@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #d4d3d8;
+}
+.container {
+  max-width: 688px;
+  margin: 0 auto;
+}
+.header {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+.haeder__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+}
+.header__subtitle {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+.form__name {
+  display: flex;
+  flex-direction: column;
+}
+.form__school {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  width: 450px;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding-left: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.form__input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #abb5be;
+}
+.form__select {
+  width: 214px;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding-left: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form__placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #abb5be;
+}
+.form__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #818182;
+  margin-top: 48px;
+  margin-bottom: 3px;
+}
+hr {
+  color: #dee2e6;
+  height: 1px;
+  max-width: 100%;
+  margin-top: 40px;
+}
+select:not(:valid) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #abb5be;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.card__picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.info {
+  padding: 24px;
+}
+.info__title {
+  line-height: 24px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+@media (max-width: 756px) {
+  .container {
+    max-width: 90%;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .form__text {
+    margin-top: 19px;
+  }
+  .haeder__title {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 63px;
+    margin-bottom: 14px;
+  }
+  .header__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__select {
+    width: 100%;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+}
