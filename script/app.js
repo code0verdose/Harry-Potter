@@ -80,10 +80,12 @@ const input = document.querySelector('#input')
 function inputSearch() {
     input.addEventListener('input', () => {
         const inputValue = input.value;
-        const newData = data.filter((item) => item.name.toLowerCase().includes(inputValue.toLowerCase().trim()));
+        const newData = data
+            .filter((item) => item.name.toLowerCase().includes(inputValue.toLowerCase().trim()))
+            .filter((item) => item.house.includes(inputSort.value));
         gridContainer.innerHTML = '';
         return newData.forEach((item) => createItem(item.image, item.name, item.actor, item.gender, item.house, item.wand.core, item.alive));
-    })
+    });
 }
 
 inputSearch() //Вызов функции поиска по карточкам (item)
