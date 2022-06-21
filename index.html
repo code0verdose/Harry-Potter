@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Harry Potter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <h1 class="haeder__title">Harry Potter</h1>
-        <span class="header__subtitle"
-          >View all characters from the Harry Potter universe</span
-        >
+    <link rel="stylesheet" href="./style/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="">
+            <h1 class="haeder__title">Harry Potter</h1>
+            <span class="header__subtitle"
+            >View all characters from the Harry Potter universe</span>
+        </a>
         <form action="#" class="header__form form">
-          <div class="form__name">
-            <span class="form__text">Name</span>
-            <input
-              class="form__input"
-              type="text"
-              required
-              placeholder="Hermione"
-              id="input"
-            />
-          </div>
-          <div class="form__school">
-            <span class="form__text">School</span>
-            <select class="form__select" name="school" required id="school">
-              <option value="">Choose one</option>
-              <option value="Gryffindor">Gryffindor</option>
-              <option value="Slytherin">Slytherin</option>
-              <option value="Hufflepuff">Hufflepuff</option>
-              <option value="Ravenclaw">Ravenclaw</option>
-            </select>
-          </div>
+            <div class="form__name">
+                <span class="form__text">Name</span>
+                <input
+                        class="form__input"
+                        type="text"
+                        required
+                        placeholder="Hermione"
+                        id="input"
+                />
+            </div>
+            <div class="form__school">
+                <span class="form__text">School</span>
+                <select class="form__select" name="school" required id="school">
+                    <option value="">Choose one</option>
+                    <option value="Gryffindor">Gryffindor</option>
+                    <option value="Slytherin">Slytherin</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                </select>
+            </div>
         </form>
-      </div>
-      <hr />
-    </header>
-    <main>
-      <div class="hero">
-        <div class="container">
-          <div class="grid">
 
-          </div>
+    </div>
+    <hr/>
+    <svg width="24" height="23" class="hidden">
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23" id="empty-like">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.9998 4.12207L10.9243 3.01657C8.39984 0.421573 3.77084 1.31707 2.09984 4.57957C1.31534 6.11407 1.13834 8.32957 2.57084 11.1571C3.95084 13.8796 6.82184 17.1406 11.9998 20.6926C17.1778 17.1406 20.0473 13.8796 21.4288 11.1571C22.8613 8.32807 22.6858 6.11407 21.8998 4.57957C20.2288 1.31707 15.5998 0.420073 13.0753 3.01507L11.9998 4.12207ZM11.9998 22.5001C-10.9997 7.30207 4.91834 -4.55993 11.7358 1.71457C11.8258 1.79707 11.9143 1.88257 11.9998 1.97107C12.0845 1.88265 12.1725 1.79759 12.2638 1.71607C19.0798 -4.56293 34.9993 7.30057 11.9998 22.5001Z"
+                  fill="#DC3545"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23" id="like">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.9997 1.97108C18.6567 -4.87192 35.3007 7.10258 11.9997 22.5001C-11.3013 7.10408 5.34267 -4.87192 11.9997 1.97108Z"
+                  fill="#DC3545"></path>
+        </symbol>
+    </svg>
+</header>
+<main>
+    <div class="hero">
+        <div class="container">
+            <div class="grid">
+
+            </div>
         </div>
-      </div>
-    </main>
-    <script type="module" src="./script/app.js"></script>
-  </body>
+    </div>
+</main>
+<script type="module" src="./script/app.js"></script>
+</body>
 </html>

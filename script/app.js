@@ -10,7 +10,6 @@ function createItem(picture, nameTitle, actor, gender, house, wand, alive) {
     card.className = "card";
 
     let pictureContainer = document.createElement('div');
-    pictureContainer = document.createElement('div')
     pictureContainer.className = 'card__picture';
     card.append(pictureContainer)
 
@@ -19,6 +18,13 @@ function createItem(picture, nameTitle, actor, gender, house, wand, alive) {
     pictureImg.src = picture
     pictureImg.className = 'card__img';
     pictureContainer.append(pictureImg)
+
+    let likeContainer = document.createElement('div')
+    likeContainer.className = 'like__container'
+    likeContainer.innerHTML = '<svg class="like__img empty">\n' +
+        '  <use xlink:href="#empty-like"></use>\n' +
+        '</svg>'
+    card.append(likeContainer)
 
     let infoContainer = document.createElement('div');
     infoContainer = document.createElement('div')
@@ -89,3 +95,26 @@ function inputSearch() {
 }
 
 inputSearch() //Вызов функции поиска по карточкам (item)
+
+//Отслеживание лайков
+let like = document.querySelectorAll('.like__container')
+
+for (let items of like) {
+    items.addEventListener('click', (evt) => {
+        if (evt.target.classList.contains('empty')) {
+            items.innerHTML = '<svg class="like__img">\n' +
+                '  <use xlink:href="#like"></use>\n' +
+                '</svg>'
+            evt.target.classList.remove('empty')
+        } else {
+
+            console.log(123)
+            items.innerHTML = '<svg class="like__img empty">\n' +
+                '  <use xlink:href="#empty-like"></use>\n' +
+                '</svg>'
+
+        }
+    })
+}
+
+
