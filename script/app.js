@@ -56,6 +56,22 @@ function createItem(picture, nameTitle, actor, gender, house, wand, alive) {
     cardAliveStatus.textContent = `Alive: ${alive ? 'yes' : 'no'}`;
     infoContainer.append(cardAliveStatus)
 
+    // let like = document.querySelector('.like__container');
+
+    likeContainer.addEventListener('click', (evt) => {
+        if (evt.target.classList.contains('empty')) {
+            likeContainer.innerHTML = '<svg class="like__img">\n' +
+                '  <use xlink:href="#like"></use>\n' +
+                '</svg>'
+            evt.target.classList.remove('empty')
+        } else {
+            likeContainer.innerHTML = '<svg class="like__img empty">\n' +
+                '  <use xlink:href="#empty-like"></use>\n' +
+                '</svg>'
+
+        }
+    })
+
 
     gridContainer.append(card)
 }
@@ -97,24 +113,22 @@ function inputSearch() {
 inputSearch() //Вызов функции поиска по карточкам (item)
 
 //Отслеживание лайков
-let like = document.querySelectorAll('.like__container')
+// const like = document.querySelectorAll('.like__container')
 
-for (let items of like) {
-    items.addEventListener('click', (evt) => {
-        if (evt.target.classList.contains('empty')) {
-            items.innerHTML = '<svg class="like__img">\n' +
-                '  <use xlink:href="#like"></use>\n' +
-                '</svg>'
-            evt.target.classList.remove('empty')
-        } else {
-
-            console.log(123)
-            items.innerHTML = '<svg class="like__img empty">\n' +
-                '  <use xlink:href="#empty-like"></use>\n' +
-                '</svg>'
-
-        }
-    })
-}
+// for (let items of like) {
+//     items.addEventListener('click', (evt) => {
+//         if (evt.target.classList.contains('empty')) {
+//             items.innerHTML = '<svg class="like__img">\n' +
+//                 '  <use xlink:href="#like"></use>\n' +
+//                 '</svg>'
+//             evt.target.classList.remove('empty')
+//         } else {
+//             items.innerHTML = '<svg class="like__img empty">\n' +
+//                 '  <use xlink:href="#empty-like"></use>\n' +
+//                 '</svg>'
+//
+//         }
+//     })
+// }
 
 

@@ -130,12 +130,13 @@ select:not(:valid) {
 .like__img {
   width: 24px;
   height: 23px;
-  transition: .3s;
+  transition: .4s;
   margin-top: 3px;
+  cursor: pointer;
 }
 .like__img:hover {
   transform: scale(1.2);
-  transition: .3s;
+  transition: .4s;
 }
 .card__picture {
   display: block;
@@ -153,6 +154,46 @@ select:not(:valid) {
   line-height: 24px;
   font-size: 20px;
   margin-bottom: 5px;
+}
+.likes {
+  position: relative;
+}
+.btn {
+  position: fixed;
+  right: 40px;
+  bottom: 23px;
+  display: flex;
+  align-items: center;
+  padding: 10px 21px 10px 13px;
+  background: #FFF;
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+  border-radius: 48px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3F444A;
+  transition: .2s;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: .2s;
+  /*background: #F5F5F5;*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+  transform: translateY(2px);
+}
+.btn:active {
+  transition: .2s;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+  transform: translateY(3px);
+}
+.show {
+  margin-right: 12px;
+  width: 24px;
+  height: 23px;
 }
 p {
   font-size: 16px;
